@@ -4,10 +4,7 @@ After=multi-user.target
 
 [Service]
 Type=idle
-ExecStart=/usr/bin/python /root/post_boot.py
+ExecStart=/usr/bin/python /root/tmp/post_boot.py
 
 [Install]
 WantedBy=multi-user.target
-
-####### to install service
-#####cp post_boot.service /etc/systemd/system/.
