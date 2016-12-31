@@ -1,5 +1,0 @@
-instructions.txt
-
-install python
-install pip
-instal pip install python-etcd
