@@ -13,7 +13,9 @@ curl -o /root/tmp/post_boot.service https://raw.githubusercontent.com/jmbarros/a
 
 /usr/bin/yum install -y python
 /usr/bin/python /root/tmp/get-pip.py
-/usr/bin/pip pip install python-etcd
+/usr/bin/pip install python-etcd
 
 /usr/bin/chmod +x /root/tmp/*
 cp /root/tmp/post_boot.service /etc/systemd/system/post_boot.service
+/usr/bin/systemctl enable post_boot.service
+#/usr/sbin/poweroff
